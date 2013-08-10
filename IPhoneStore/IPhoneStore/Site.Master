@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="IPhoneStore.SiteMaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+
+     <style type="text/css" title="currentStyle">
+     @import "DataTables/css/demo_table.css";
+     </style>
+    <script type="text/javascript" charset="utf-8" src="Datatables/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" charset="utf-8" src="~/Datatables/js/jquery.dataTables.js"></script>    
+    <script type="text/javascript" charset="utf-8" src="~/Datatables/js/MyTableApis.js"></script>
+    <script type="text/javascript" charset="utf-8" src="Datatables/js/addrows.js"></script>
+    <script type="text/javascript" charset="utf-8" src="Datatables/js/add_customer_validation.js"></script>
+    <script type="text/javascript" charset="utf-8" src="Datatables/js/Main.js"></script>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/DataTable.css" rel="stylesheet" type="text/css" />
+    
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+        <Services>
+            <asp:ServiceReference Path="WebService.asmx" />
+        </Services>     
+      <Scripts>
+        <asp:ScriptReference Path="~/Datatables/js/addrows.js" />
+      </Scripts>      
+    </asp:ScriptManager>
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Ray's Mobile Store
+                </h1>
+            </div>
+            <div id="banner"> 
+                  <img id="mobiles_img" alt="mobiles" src="Images/mobiles.png" />
+            </div>
+            
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Store"/>
+                        <asp:MenuItem NavigateUrl="~/StockInventory.aspx" Text="Stock Inventory"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

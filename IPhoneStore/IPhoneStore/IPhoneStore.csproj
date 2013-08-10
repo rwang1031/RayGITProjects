@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5E2DE6BF-0989-499B-BD51-687F3C28AD97}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IPhoneStore</RootNamespace>
+    <AssemblyName>IPhoneStore</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="App_Data\ASPNETDB.MDF" />
+    <Content Include="App_Data\ASPNETDB_log.ldf">
+      <DependentUpon>ASPNETDB.MDF</DependentUpon>
+    </Content>
+    <Content Include="Datatables\css\demo_table.css" />
+    <Content Include="Datatables\images\animated-overlay.gif" />
+    <Content Include="Datatables\images\apple_img.png" />
+    <Content Include="Datatables\images\back_disabled.png" />
+    <Content Include="Datatables\images\back_enabled.png" />
+    <Content Include="Datatables\images\back_enabled_hover.png" />
+    <Content Include="Datatables\images\favicon.ico" />
+    <Content Include="Datatables\images\forward_disabled.png" />
+    <Content Include="Datatables\images\forward_enabled.png" />
+    <Content Include="Datatables\images\forward_enabled_hover.png" />
+    <Content Include="Datatables\images\sort_asc.png" />
+    <Content Include="Datatables\images\sort_asc_disabled.png" />
+    <Content Include="Datatables\images\sort_both.png" />
+    <Content Include="Datatables\images\sort_desc.png" />
+    <Content Include="Datatables\images\sort_desc_disabled.png" />
+    <Content Include="Datatables\js\addrows.js" />
+    <Content Include="Datatables\js\add_customer_validation.js" />
+    <Content Include="Datatables\js\inventory.js" />
+    <Content Include="Datatables\js\jquery-1.10.2.js" />
+    <Content Include="Datatables\js\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="Datatables\js\jquery.dataTables.js" />
+    <Content Include="Datatables\js\jquery.dataTables.min.js" />
+    <Content Include="Datatables\js\Main.js" />
+    <Content Include="Datatables\js\MyTableApis.js" />
+    <Content Include="Datatables\src\api\api.internal.js" />
+    <Content Include="Datatables\src\api\api.methods.js" />
+    <Content Include="Datatables\src\api\api.static.js" />
+    <Content Include="Datatables\src\core\core.ajax.js" />
+    <Content Include="Datatables\src\core\core.columns.js" />
+    <Content Include="Datatables\src\core\core.constructor.js" />
+    <Content Include="Datatables\src\core\core.data.js" />
+    <Content Include="Datatables\src\core\core.draw.js" />
+    <Content Include="Datatables\src\core\core.filter.js" />
+    <Content Include="Datatables\src\core\core.info.js" />
+    <Content Include="Datatables\src\core\core.init.js" />
+    <Content Include="Datatables\src\core\core.length.js" />
+    <Content Include="Datatables\src\core\core.page.js" />
+    <Content Include="Datatables\src\core\core.processing.js" />
+    <Content Include="Datatables\src\core\core.scrolling.js" />
+    <Content Include="Datatables\src\core\core.sizing.js" />
+    <Content Include="Datatables\src\core\core.sort.js" />
+    <Content Include="Datatables\src\core\core.state.js" />
+    <Content Include="Datatables\src\core\core.support.js" />
+    <Content Include="Datatables\src\DataTables.js" />
+    <Content Include="Datatables\src\ext\ext.classes.js" />
+    <Content Include="Datatables\src\ext\ext.paging.js" />
+    <Content Include="Datatables\src\ext\ext.sorting.js" />
+    <Content Include="Datatables\src\ext\ext.types.js" />
+    <Content Include="Datatables\src\model\model.column.js" />
+    <Content Include="Datatables\src\model\model.defaults.columns.js" />
+    <Content Include="Datatables\src\model\model.defaults.js" />
+    <Content Include="Datatables\src\model\model.ext.js" />
+    <Content Include="Datatables\src\model\model.row.js" />
+    <Content Include="Datatables\src\model\model.search.js" />
+    <Content Include="Datatables\src\model\model.settings.js" />
+    <EmbeddedResource Include="Images\apple_img.png" />
+    <EmbeddedResource Include="Images\mobiles.png" />
+    <EmbeddedResource Include="Images\RayIPadBlack1.jpg" />
+    <EmbeddedResource Include="Images\RayIPadWhite1.jpg" />
+    <EmbeddedResource Include="Images\RayIphoneBlack1.jpg" />
+    <EmbeddedResource Include="Images\RayIphoneWhite1.jpg" />
+    <EmbeddedResource Include="Images\RaySPadBlack1.jpg" />
+    <EmbeddedResource Include="Images\RaySPadWhite1.jpg" />
+    <EmbeddedResource Include="Images\RaySphoneBlack1.jpg" />
+    <EmbeddedResource Include="Images\RaySphoneWhite1.jpg" />
+    <EmbeddedResource Include="Images\samsung_img.png" />
+    <Content Include="Images\e_exist.gif" />
+    <Content Include="Images\check_mark_green.png" />
+    <None Include="Service References\ServiceReference\WebService.disco" />
+    <None Include="Service References\ServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="StockInventory.aspx" />
+    <Content Include="Styles\DataTable.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebService.asmx" />
+    <None Include="Service References\ServiceReference\WebService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataHelper.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StockInventory.aspx.cs">
+      <DependentUpon>StockInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockInventory.aspx.designer.cs">
+      <DependentUpon>StockInventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService.asmx.cs">
+      <DependentUpon>WebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Datatables\images\Sorting icons.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6350</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

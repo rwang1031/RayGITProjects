@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ASPNETDB" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\ASPNETDB.MDF;Integrated Security=True;User Instance=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ASPNETDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Item_Info" Member="Item_Infos">
+    <Type Name="Item_Info">
+      <Column Name="Item_ID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Item_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Item_Type_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Item_Price" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Item_Price_Currency_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Item_Manufacturer_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Item_Type_Info" Member="Item_Type_Infos">
+    <Type Name="Item_Type_Info">
+      <Column Name="Item_Type_ID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Item_Type_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Manufacturer_Info" Member="Manufacturer_Infos">
+    <Type Name="Manufacturer_Info">
+      <Column Name="Manufacturer_ID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Manufacturer_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Manufacturer_Logo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Item_Storage_Info" Member="Item_Storage_Infos">
+    <Type Name="Item_Storage_Info">
+      <Column Name="Item_Serial_Number" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Item_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Item_Color" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Customer_Info" Member="Customer_Infos">
+    <Type Name="Customer_Info">
+      <Column Name="Customer_ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Customer_FirstName" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Customer_LastName" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Customer_Address" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Customer_Phone_Number" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Customer_Email" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Get_Customers">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_CustomersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_CustomersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Stocklist">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_StocklistResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_StocklistResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Orders_By_CustomerID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="customer_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Orders_By_CustomerIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Orders_By_CustomerIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Add_Customer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="first_name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="last_name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Add_CustomerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Add_CustomerResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Add_Item">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="item_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="color" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Add_ItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Add_ItemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Order_Item">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="customer_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="item_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="item_color" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Order_ItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Order_ItemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Check_Email_Existence">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Check_Email_ExistenceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Check_Email_ExistenceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Get_CustomersSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Customers" />
+  </wsdl:message>
+  <wsdl:message name="Get_CustomersSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_CustomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_StocklistSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Stocklist" />
+  </wsdl:message>
+  <wsdl:message name="Get_StocklistSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_StocklistResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Orders_By_CustomerIDSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Orders_By_CustomerID" />
+  </wsdl:message>
+  <wsdl:message name="Get_Orders_By_CustomerIDSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Orders_By_CustomerIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="Add_CustomerSoapIn">
+    <wsdl:part name="parameters" element="tns:Add_Customer" />
+  </wsdl:message>
+  <wsdl:message name="Add_CustomerSoapOut">
+    <wsdl:part name="parameters" element="tns:Add_CustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="Add_ItemSoapIn">
+    <wsdl:part name="parameters" element="tns:Add_Item" />
+  </wsdl:message>
+  <wsdl:message name="Add_ItemSoapOut">
+    <wsdl:part name="parameters" element="tns:Add_ItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="Order_ItemSoapIn">
+    <wsdl:part name="parameters" element="tns:Order_Item" />
+  </wsdl:message>
+  <wsdl:message name="Order_ItemSoapOut">
+    <wsdl:part name="parameters" element="tns:Order_ItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="Check_Email_ExistenceSoapIn">
+    <wsdl:part name="parameters" element="tns:Check_Email_Existence" />
+  </wsdl:message>
+  <wsdl:message name="Check_Email_ExistenceSoapOut">
+    <wsdl:part name="parameters" element="tns:Check_Email_ExistenceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceSoap">
+    <wsdl:operation name="Get_Customers">
+      <wsdl:input message="tns:Get_CustomersSoapIn" />
+      <wsdl:output message="tns:Get_CustomersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Stocklist">
+      <wsdl:input message="tns:Get_StocklistSoapIn" />
+      <wsdl:output message="tns:Get_StocklistSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Orders_By_CustomerID">
+      <wsdl:input message="tns:Get_Orders_By_CustomerIDSoapIn" />
+      <wsdl:output message="tns:Get_Orders_By_CustomerIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Add_Customer">
+      <wsdl:input message="tns:Add_CustomerSoapIn" />
+      <wsdl:output message="tns:Add_CustomerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Add_Item">
+      <wsdl:input message="tns:Add_ItemSoapIn" />
+      <wsdl:output message="tns:Add_ItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Order_Item">
+      <wsdl:input message="tns:Order_ItemSoapIn" />
+      <wsdl:output message="tns:Order_ItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Check_Email_Existence">
+      <wsdl:input message="tns:Check_Email_ExistenceSoapIn" />
+      <wsdl:output message="tns:Check_Email_ExistenceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceSoap" type="tns:WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_Customers">
+      <soap:operation soapAction="http://tempuri.org/Get_Customers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Stocklist">
+      <soap:operation soapAction="http://tempuri.org/Get_Stocklist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Orders_By_CustomerID">
+      <soap:operation soapAction="http://tempuri.org/Get_Orders_By_CustomerID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Add_Customer">
+      <soap:operation soapAction="http://tempuri.org/Add_Customer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Add_Item">
+      <soap:operation soapAction="http://tempuri.org/Add_Item" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Order_Item">
+      <soap:operation soapAction="http://tempuri.org/Order_Item" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Check_Email_Existence">
+      <soap:operation soapAction="http://tempuri.org/Check_Email_Existence" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceSoap12" type="tns:WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_Customers">
+      <soap12:operation soapAction="http://tempuri.org/Get_Customers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Stocklist">
+      <soap12:operation soapAction="http://tempuri.org/Get_Stocklist" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Orders_By_CustomerID">
+      <soap12:operation soapAction="http://tempuri.org/Get_Orders_By_CustomerID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Add_Customer">
+      <soap12:operation soapAction="http://tempuri.org/Add_Customer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Add_Item">
+      <soap12:operation soapAction="http://tempuri.org/Add_Item" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Order_Item">
+      <soap12:operation soapAction="http://tempuri.org/Order_Item" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Check_Email_Existence">
+      <soap12:operation soapAction="http://tempuri.org/Check_Email_Existence" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService">
+    <wsdl:port name="WebServiceSoap" binding="tns:WebServiceSoap">
+      <soap:address location="http://localhost:6350/WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceSoap12" binding="tns:WebServiceSoap12">
+      <soap12:address location="http://localhost:6350/WebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

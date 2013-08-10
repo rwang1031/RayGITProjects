@@ -1,0 +1,141 @@
+﻿body {
+}
+
+
+#table_inventory td img.apple
+{
+   width:auto;
+   height:40px;
+   margin-left:36px;   
+}
+
+#table_inventory td img.samsung
+{
+   width:auto;
+   height:40px;
+   margin-left:0px;       
+}
+
+.dataTable tbody > tr 
+{
+  height:40px;       
+}
+
+#table_customer_wrapper
+{
+    width:48%;
+    float:left;
+	margin-left:10px
+}
+
+#table_order_wrapper
+{
+    width:48%;
+    float:left;
+	margin-left:10px
+}
+
+#table_inventory_ourter_wrapper
+{
+   position:relative; 
+   width:100%;
+   height:400px;  
+   margin:20px auto 0px auto; 
+   
+}
+
+#table_inventory_wrapper
+{
+    width:100%;
+    clear:both;	
+	position:absolute;
+}
+
+#div_add_item
+{
+    position:relative;
+    height:200px;
+    width:300px;
+    margin-left:5px;
+    margin-top:20px;
+}
+
+#div_add_customer
+{
+    position:relative;
+    height:inherit;
+    width:400px;
+    margin-left:25px;
+    margin-top:0px;
+    float:left;
+}
+
+#div_add_customer input
+{
+     
+}
+
+
+
+#div_order_item
+{
+    position:relative;
+    height:300px;
+    width:480px;
+    padding-left:0px;
+    padding-right:0px;  
+    margin-top:0px;
+    margin-left:5px;
+    float:left;
+    overflow:hidden;         
+}
+
+#div_tables{position:relative; height:380px; width:900px; margin:0px auto 0px auto;}
+
+.table_title{margin-left:10px; font-size:large; color:#4b6c9e;}
+
+/* Highting table rows when mouseover*/
+.mouseover_row{background-color:#ECFFB3 !important;}
+/*Highting selected row in a table*/
+.selected_row{background-color:#ff670f !important;}
+
+
+#UpdatePanel1{position:relative;}
+
+#Color_ID{width:156px;}
+
+#div_inputs{width:100%; height:300px; position:relative; clear:both;}
+
+.input_tables {font:Arial 14px;}
+
+.input_tables td{height:40px; padding:2px 5px 2px 5px; position:relative; vertical-align:top;}
+
+.div_collapse{position:relative;}
+
+
+.order_dropdowns{width:150px;}
+
+#div_PhoneImage{ position:relative; float:left; margin-left:30px; margin-top:40px;}
+#PhoneImage{margin-top:20px;}
+
+#customer_id_table{position:absolute; margin-left:600px; top:-265px; font-size:large; color:Blue;}
+#customer_id_wrapper{position:relative;}
+.hidden{display:none ! important;}
+
+#div_mf_wrapper{ float:left; margin-left:20px; margin-top:40px;}
+#stock_amount_div{margin-left:20px;}
+
+
+.add_c_td1{ }
+.add_c_td2{ overflow:visible;}
+.add_c_td3{width:50px;}
+.warning{color:Red; overflow:visible;}
+
+.check_img{ height:15px; width:15px; margin-left:10px;}
+
+#email_e_warning{color:Red;}
+
+#e_exist
+{
+  margin-left:5px;  position:relative; margin-bottom:-4px;
+}
