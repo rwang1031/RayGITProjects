@@ -11,8 +11,9 @@ var _oCustomerData;
 var _oOrderData;
 var _customer_new_id;
 var _order_new_id;
- 
+
 $(function () {
+    //Get Customer Information From Webservice then populate it to datatable. 
     getCustomerData();
     getOrderDataByCustomerID("100000");
     $('#button_add_customer').unbind('click').click(add_customer_button_clickhandler);
